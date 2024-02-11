@@ -6,11 +6,10 @@ const[error, setError] = useState (null)
 const[loading, setLoading] = useState (false)
 
 
-
-
    useEffect (() => {
     setLoading(true)
-    fetch('/api/v1/users', {
+    
+    fetch(url, {
         method,
         headers: {
           "Content-Type": "application/json",
@@ -40,3 +39,4 @@ const[loading, setLoading] = useState (false)
 }
 
 export default useFetch
+ 
